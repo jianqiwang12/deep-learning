@@ -1,4 +1,3 @@
-from tkinter.messagebox import NO
 import torch
 from torch import nn 
 
@@ -90,9 +89,9 @@ class ResNet(nn.Module):
         self.conv1 = nn.Conv2d(3, self.in_channel, kernel_size=7, stride=2, padding=3, bias=False)
         self.bn1 = nn.BatchNorm2d(self.in_channel)
         self.relu = nn.ReLU(inplace=True) # inplace???
-        self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
 
         # Conv2
+        self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
         self.layer1 = self._make_layer(block, 64, blocks_num[0])
 
         # Conv3
