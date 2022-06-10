@@ -1,6 +1,0 @@
-torch==1.10.0
-torchvision==0.10.0
-pandas==1.2.4
-numpy==1.22.2
-matplotlib==3.4.0
-d2l==0.17.4
